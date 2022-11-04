@@ -511,24 +511,22 @@
           </div>
           <div>
             <p class="mailing-title">Підпишіться на розсилку</p>
-            <div class="mailing">
-              <form name="footer-form">
-                <label class="footer-label" for="user-e-mail"></label>
-                <input
-                  class="footer-input"
-                  id="user-e-mail"
-                  type="text"
-                  name="user-e-mail"
-                  placeholder="E-mail"
-                />
-              </form>
+
+            <form name="footer-form" class="mailing">
+              <input
+                class="footer-input"
+                id="user-e-mail"
+                type="text"
+                name="user-e-mail"
+                placeholder="E-mail"
+              />
               <button type="submit" class="footer-button">
                 Підписатися
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -539,7 +537,8 @@
       <div class="modal">
         <!-- форма -->
         <div class="modal-active">
-          <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+          <p></p>
           <form name="contact-form">
             <label class="form-label" for="user-name">Ім'я</label>
             <div class="form-control">
@@ -584,7 +583,10 @@
                 <svg class="icon-check" width="16" height="15">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-                <span> Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></span>
+                <span>
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="#"><span class="checkbox-link">Умови договору</span></a>
+                </span>
               </label>
             </div>
 
